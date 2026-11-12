@@ -14,12 +14,15 @@
 
 ## 技术与结构
 
-纯 HTML、CSS 和 SVG，无构建依赖、外部字体、跟踪脚本或后端服务。支持手机布局、键盘导航、原生项目详情展开以及减少动画偏好。
+纯 HTML、CSS、SVG，配合本地 WebP 配图与 WOFF2 字体，无构建依赖、跟踪脚本或后端服务。支持手机布局、键盘导航、原生项目详情展开以及减少动画偏好。
+
+视觉采用黑白杂志排版：Instrument Serif 英文标题、Noto Serif SC 中文标题、大幅作品配图和充分留白。字体与许可证均保存在 `assets/`，页面不向外部字体服务发出请求。智能植物装置配图为项目已有的 AI 辅助概念设计图，保留原图标识，并非已交付样机的实物照片。
 
 ```text
 index.html          页面内容
 styles.css          样式与响应式布局
-assets/favicon.svg  站点图标
+assets/             图标、概念配图、本地字体及许可证
+DESIGN.md           设计规则与参考 skills
 .nojekyll           让 GitHub Pages 直接发布静态文件
 ```
 

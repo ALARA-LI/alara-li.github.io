@@ -3,115 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f5f0">
-  <meta name="description" content="黎健毓的个人网站。智能科学与技术在读，关注产品设计、机器人与 Linux，用项目记录思考与成长。">
-  <meta property="og:title" content="黎健毓 · ALARA">
-  <meta property="og:description" content="把好奇心，做成作品。我的项目、经历与正在探索的方向。">
+  <meta name="theme-color" content="#fcfcfa">
+  <meta name="description" content="黎健毓的个人作品集。智能科学与技术在读，关注产品设计、Linux 与机器人，用项目记录思考与实践。">
+  <meta property="og:title" content="黎健毓 / ALARA — Ideas, made real.">
+  <meta property="og:description" content="产品思考与技术实践。我的项目、经历，以及正在探索的方向。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://alara-li.github.io/">
-  <title>黎健毓 · ALARA — 把好奇心，做成作品</title>
+  <title>黎健毓 / ALARA — Ideas, made real.</title>
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="preload" href="./assets/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./assets/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css?v=editorial-2">
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到正文</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="wordmark" href="#" aria-label="ALARA 首页">alara<span class="wordmark-dot">.</span></a>
-      <nav aria-label="主导航">
-        <a href="#projects">项目</a>
-        <a href="#about">关于</a>
-        <a href="#contact">联系</a>
-      </nav>
-      <a class="header-github external" href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-    </div>
+  <header class="site-header page-width">
+    <a class="identity" href="#main" aria-label="黎健毓，首页"><span class="identity-name">黎健毓</span><span class="identity-divider" aria-hidden="true">/</span><span class="identity-alias">ALARA</span></a>
+    <nav aria-label="主导航"><a href="#projects">作品</a><a href="#about">关于我</a><a href="#contact">联系</a></nav>
+    <a class="github-link" href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer">GitHub <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" stroke="currentColor" stroke-width="1.4"/></svg></a>
   </header>
 
   <main id="main">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> HELLO, I'M LI JIANYU</p>
-        <h1 id="hero-title">把好奇心，<br>做成<span class="title-mark">作品<svg viewBox="0 0 240 18" fill="none" aria-hidden="true"><path d="M4 13C65 2 155 2 235 9" stroke="currentColor" stroke-width="8" stroke-linecap="round"/></svg></span>。</h1>
-        <p class="hero-intro">你好，我是<span class="name">黎健毓</span>。<br>智能科学与技术在读，正在走向产品方向。<br>从机器人与嵌入式出发，继续探索 Linux 与软件开发。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">看看我的项目 <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#about">多认识我一点 <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-footnote"><span class="mono">01 / IN PROGRESS</span><span>持续学习，也持续动手。</span></div>
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-topline"><p>产品思考与技术实践</p><span>个人作品集 · 2026</span></div>
+      <div class="hero-main">
+        <div class="hero-title-wrap"><h1 id="hero-title" lang="en">Ideas,<br><span class="hero-second-line">made real.</span></h1><p class="hero-chinese">以技术理解世界，用产品回应问题。</p></div>
+        <div class="hero-intro"><p class="intro-greeting">你好，我是黎健毓。</p><p>在湖南农业大学学习智能科学与技术，<br class="desktop-break">正在走向产品方向。</p><p>从机器人与嵌入式出发，<br class="desktop-break">继续探索 Linux、软件开发与开源。</p><a class="primary-link" href="#projects"><span>浏览我的作品</span><span class="round-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.5"/></svg></span></a></div>
       </div>
-
-      <div class="hero-art" aria-label="个人探索方向：技术、产品与创造">
-        <div class="art-topline"><span class="mono">ALARA'S WORKBENCH</span><span class="art-status"><i aria-hidden="true"></i> 持续探索中</span></div>
-        <div class="orbit-scene" aria-hidden="true">
-          <div class="orbit orbit-outer"></div><div class="orbit orbit-inner"></div>
-          <span class="orbit-cross cross-one">+</span><span class="orbit-cross cross-two">+</span>
-          <span class="scene-label label-build">BUILD</span><span class="scene-label label-learn">LEARN</span>
-          <div class="monogram"><span>想</span><span class="monogram-symbol">↗</span></div>
-          <div class="orbit-chip chip-code"><span>&lt;/&gt;</span> 技术</div>
-          <div class="orbit-chip chip-product"><span>✳</span> 产品</div>
-          <div class="orbit-chip chip-create"><span>↗</span> 创造</div>
-        </div>
-        <div class="terminal-note"><span class="terminal-prompt">~ /</span><div><span class="mono terminal-title">next chapter</span><p>Linux · 开源 · 把想法写成代码<span class="cursor" aria-hidden="true"></span></p></div></div>
-        <span class="art-corner corner-tl" aria-hidden="true"></span><span class="art-corner corner-br" aria-hidden="true"></span>
-      </div>
+      <div class="hero-bottom"><p>保持好奇，持续创造。</p><span class="scroll-cue">向下探索 <svg viewBox="0 0 16 20" fill="none" aria-hidden="true"><path d="M8 1v17m-6-6 6 6 6-6" stroke="currentColor"/></svg></span></div>
     </section>
 
-    <div class="discipline-band"><div class="container discipline-inner"><span class="mono">MY INTERESTS</span><p>产品思考 <span aria-hidden="true">✳</span> Linux 探索 <span aria-hidden="true">✳</span> 机器人 <span aria-hidden="true">✳</span> 开源实践</p><span class="band-arrow" aria-hidden="true">↙</span></div></div>
-
-    <section class="section container" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><div><p class="eyebrow">01 — SELECTED WORK</p><h2 id="projects-title">动手做过的事<span class="heading-dot">.</span></h2></div><p class="section-description">从一个具体问题出发，<br>在设计、开发与验证中寻找答案。</p></div>
-      <article class="featured-project">
-        <div class="project-visual plant-visual" role="img" aria-label="智能多肉生长装置的功能示意：环境监测、控制与养护">
-          <div class="visual-caption mono">GROW / OBSERVE / ITERATE</div>
-          <svg class="plant-drawing" viewBox="0 0 480 350" fill="none" aria-hidden="true">
-            <ellipse cx="236" cy="304" rx="118" ry="15" fill="#184a34" opacity=".08"/>
-            <path d="M142 204h187l-20 81c-3 11-13 18-24 18h-97c-12 0-22-8-25-19l-21-80Z" fill="#eee8d8" stroke="#1d503c" stroke-width="2"/>
-            <ellipse cx="235" cy="205" rx="94" ry="24" fill="#d3ddbb" stroke="#1d503c" stroke-width="2"/>
-            <path d="M236 194c-60-5-102-47-99-94 58 4 95 36 99 94Z" fill="#85a883" stroke="#1d503c" stroke-width="2"/>
-            <path d="M237 192c-28-43-28-91 6-128 29 40 28 89-6 128Z" fill="#b5c997" stroke="#1d503c" stroke-width="2"/>
-            <path d="M238 194c9-61 48-95 105-96-1 51-47 91-105 96Z" fill="#96b68d" stroke="#1d503c" stroke-width="2"/>
-            <path d="M235 196c-52 12-96-4-118-42 48-19 92-4 118 42Z" fill="#b4ca9c" stroke="#1d503c" stroke-width="2"/>
-            <path d="M237 196c28-44 72-56 119-37-22 38-69 54-119 37Z" fill="#c6d5ae" stroke="#1d503c" stroke-width="2"/>
-            <path d="M236 195c-22-25-25-54-4-83 26 26 29 57 4 83Z" fill="#d9e1b8" stroke="#1d503c" stroke-width="2"/>
-            <rect x="214" y="249" width="45" height="19" rx="5" fill="#1d503c"/><circle cx="226" cy="258.5" r="3" fill="#d8e9a6"/><path d="M236 258h12" stroke="#d8e9a6" stroke-width="2"/>
-            <path d="M160 132H83v44" stroke="#6f9177" stroke-dasharray="4 5"/><circle cx="83" cy="181" r="5" fill="#1d503c"/>
-            <path d="M320 146h66v70" stroke="#6f9177" stroke-dasharray="4 5"/><circle cx="386" cy="222" r="5" fill="#1d503c"/>
-            <circle cx="355" cy="58" r="18" stroke="#8eaa74"/><path d="M355 32v-8m0 68v-8m26-26h8m-68 0h8m44-18 6-6m-48 48 6-6m36 0 6 6m-48-48 6 6" stroke="#8eaa74" stroke-width="2"/>
-          </svg>
-          <span class="diagram-label diagram-label-left">环境感知</span><span class="diagram-label diagram-label-right">自动调控</span>
-          <div class="visual-bottom"><span class="mono">01 / SMART GROWING</span><span>功能概念示意</span></div>
-        </div>
-        <div class="featured-copy">
-          <div class="project-category"><span class="small-tag">产品实践</span><span class="project-index mono">PROJECT / 01</span></div>
-          <h3>让桌面上的绿色，<br>得到更好的照顾。</h3>
-          <p class="project-name">智能多肉生长装置</p>
-          <p class="project-summary">围绕桌面植物养护，梳理环境监测与自动浇水需求，划定首代 MVP 范围，完成传感器采集、水泵控制与整机联调。</p>
-          <div class="tags"><span>需求分析</span><span>MVP 开发</span><span>软硬件协同</span></div>
-          <details class="project-details"><summary>展开项目记录 <span aria-hidden="true">+</span></summary><div class="details-content"><p><strong>我的角色</strong>项目负责人，参与需求分析、硬件选型、开发与集成验证。</p><p><strong>已经完成</strong>首代样机集成温湿度、光照监测及水泵控制，形成环境监测与自动调控闭环。</p><p><strong>这段经历</strong>让我开始把技术实现、使用场景和功能优先级放在一起思考。</p></div></details>
-        </div>
+    <section class="work-section page-width" id="projects" aria-labelledby="work-title">
+      <div class="section-header"><h2 id="work-title" lang="en">Selected work<span class="serif-period">.</span></h2><p>动手做过的事</p></div>
+      <article class="featured-work" aria-labelledby="growing-title">
+        <figure class="featured-image"><img src="./assets/smart-growing-concept.webp" alt="智能植物生长装置的概念效果图：中央生长灯与环绕摆放的模块化花盆" width="1536" height="1152" fetchpriority="high" decoding="async"><figcaption><span>智能植物养护</span><span>概念设计图 · AI 辅助生成</span></figcaption></figure>
+        <div class="featured-description"><p class="work-type">产品实践 / 智能硬件</p><h3 id="growing-title">智能多肉<br>生长装置</h3><p class="project-deck">把桌面植物养护，<br>变成一次完整的产品实践。</p><p class="project-description">从环境监测与自动浇水的需求出发，划定首代 MVP 范围，推进硬件选型、传感器采集、水泵控制与整机联调。</p><dl class="project-facts"><div><dt>我的角色</dt><dd>项目负责人</dd></div><div><dt>参与环节</dt><dd>需求分析、开发、集成验证</dd></div><div><dt>已有成果</dt><dd>首代 MVP 样机与调控闭环</dd></div></dl><details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p>围绕使用场景梳理核心功能，兼顾技术可行性，明确首代开发范围。</p><p>样机已集成温湿度、光照监测及水泵控制，并完成系统集成、功能调试与整机验证。</p><p>上方图片用于呈现产品概念，不代表已交付样机的实物外观。</p></div></details></div>
       </article>
 
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="mini-visual robot-visual" aria-hidden="true"><span class="mono mini-visual-label">CONTROL / COLLABORATE</span><svg viewBox="0 0 400 180" fill="none"><path d="m124 100 76-39 77 39-77 40-76-40Z" fill="#d1ddd2" stroke="#335849" stroke-width="2"/><path d="M124 100v22l76 40 77-40v-22m-77 40v22" stroke="#335849" stroke-width="2"/><rect x="108" y="112" width="29" height="39" rx="8" fill="#335849"/><rect x="264" y="112" width="29" height="39" rx="8" fill="#335849"/><rect x="171" y="71" width="58" height="35" rx="6" fill="#f3f2e9" stroke="#335849" stroke-width="2"/><path d="M198 71V44h44" stroke="#335849" stroke-width="9" stroke-linecap="round"/><circle cx="196" cy="88" r="8" stroke="#335849" stroke-width="2"/><path d="M62 85h31m-15-15v30m233-36h25m-12-12v25" stroke="#a2b6a7"/><circle cx="271" cy="48" r="23" stroke="#acbeb0" stroke-dasharray="4 5"/></svg></div>
-          <div class="card-body"><div class="project-category"><span class="small-tag">机器人系统</span><span class="project-index mono">02</span></div><h3>RoboMaster 步兵机器人</h3><p>从底盘运动到云台随动，围绕电控、机械与视觉的接口协同，推进多模块联调与实车验证。</p><div class="tags"><span>STM32F427</span><span>CAN</span><span>PID</span></div><details class="project-details"><summary>展开项目记录 <span aria-hidden="true">+</span></summary><div class="details-content"><p><strong>我的角色</strong>电控负责人，负责模块需求梳理、控制开发与联调推进。</p><p><strong>已经完成</strong>底盘运动、云台随动及视觉上位机通信联调，支持自动瞄准与视觉击打。</p></div></details></div>
+      <div class="work-grid">
+        <article class="compact-work" aria-labelledby="robot-title">
+          <div class="robot-art project-art" role="img" aria-label="RoboMaster 步兵机器人电控系统示意，表现底盘、云台及控制链路">
+            <span class="art-caption">RoboMaster</span>
+            <svg viewBox="0 0 540 290" fill="none" aria-hidden="true"><g stroke="#757575" stroke-width="1"><path d="m84 196 180-90 191 94-183 90L84 196Z" stroke-dasharray="3 7"/><path d="M90 230h355M269 29v248" stroke-dasharray="2 8"/><ellipse cx="267" cy="199" rx="153" ry="63" stroke="#454545"/></g><path d="m164 167 102-51 110 53-102 53-110-55Z" fill="#c8c8c3" stroke="#eeeee9"/><path d="M164 167v32l110 56 102-53v-33l-102 53-110-55Z" fill="#777873" stroke="#d2d3cb"/><path d="M274 222v33m-64-96 104 51m-71-68 105 52" stroke="#555650"/><path d="m152 187 24-12 21 10v44l-25 13-20-11v-44Zm189 2 25-13 22 12v43l-26 13-21-12v-43Z" fill="#33342f" stroke="#d2d3cb"/><path d="m152 187 20 10 25-12m-25 12v45m169-53 21 11 26-12m-26 12v44" stroke="#8e9187"/><path d="m233 130 32-17 45 22v30l-32 17-45-22v-30Z" fill="#eeeee6" stroke="#fff"/><path d="m233 130 45 22 32-17m-32 17v30" stroke="#72756b"/><path d="M268 128V92l40-21 42 20" stroke="#bfc3b6" stroke-width="9"/><path d="m343 87 26 13" stroke="#f1f3e9" stroke-width="7"/><circle cx="258" cy="149" r="7" fill="#252620"/><path d="M211 96 172 77h-54m217 77 56-28h45" stroke="#b3b7a8"/><circle cx="211" cy="96" r="3" fill="#c9cfb9"/><circle cx="335" cy="154" r="3" fill="#c9cfb9"/></svg>
+            <span class="art-footer">系统示意 / 电控与协同</span>
+          </div>
+          <div class="compact-heading"><div><p class="work-type">机器人 / 电控开发</p><h3 id="robot-title">RoboMaster 步兵机器人</h3></div><span class="work-monogram" aria-hidden="true">R.</span></div>
+          <p class="project-description">围绕底盘运动、云台随动与视觉通信，梳理模块接口，推进电控、机械及视觉的联调与实车验证。</p>
+          <details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p><strong>角色：</strong>电控负责人，负责模块需求梳理、控制开发与联调推进。</p><p><strong>技术：</strong>STM32F427、CAN 总线、串级 PID。</p><p><strong>成果：</strong>完成底盘运动、云台随动及视觉上位机通信联调，支持自动瞄准与视觉击打。</p></div></details>
         </article>
-        <article class="project-card">
-          <div class="mini-visual arm-visual" aria-hidden="true"><span class="mono mini-visual-label">PERCEIVE / ACT</span><svg viewBox="0 0 400 180" fill="none"><path d="m226 108 52-21 62 24-54 24-60-27Z" fill="#ede4d5" stroke="#967c57"/><path d="m244 102 61 24m-43-31 61 24m-78-3 52-22m-32 30 52-22" stroke="#b4a184"/><path d="M101 151h68l-10-19h-48l-10 19Z" fill="#967c57"/><path d="M135 130V91l42-34 53 29" stroke="#735e43" stroke-width="15" stroke-linejoin="round"/><circle cx="135" cy="91" r="11" fill="#e7dbc7" stroke="#735e43" stroke-width="3"/><circle cx="177" cy="57" r="11" fill="#e7dbc7" stroke="#735e43" stroke-width="3"/><path d="m230 83 10 13-6 12m6-12 13 1" stroke="#735e43" stroke-width="5" stroke-linecap="round"/><circle cx="277" cy="108" r="5" fill="#735e43"/><path d="M303 40h21m-10-10v21M75 67h21m-11-10v21" stroke="#c3b396"/></svg></div>
-          <div class="card-body"><div class="project-category"><span class="small-tag">系统集成</span><span class="project-index mono">03</span></div><h3>智能三子棋机械臂</h3><p>把棋盘识别、坐标传输和机械臂落子连接起来，完成从视觉感知到动作执行的完整链路。</p><div class="tags"><span>STM32F103</span><span>视觉通信</span><span>PWM</span></div><details class="project-details"><summary>展开项目记录 <span aria-hidden="true">+</span></summary><div class="details-content"><p><strong>我的角色</strong>项目组长，负责系统规划、任务拆分和模块联调，参与舵机驱动开发。</p><p><strong>已经完成</strong>视觉模块与下位机通信、机械臂抓取及落子动作的集成验证。</p></div></details></div>
+        <article class="compact-work" aria-labelledby="arm-title">
+          <div class="arm-art project-art" role="img" aria-label="三子棋机械臂系统示意，表现棋盘、视觉坐标和机械臂动作">
+            <span class="art-caption">A move, made possible.</span>
+            <svg viewBox="0 0 540 290" fill="none" aria-hidden="true"><path d="m270 191 83-42 102 51-83 44-102-53Z" fill="#eeeee9" stroke="#a5a5a0"/><path d="m297 177 103 53m-75-67 103 53m-125-8 83-43m-49 61 83-44" stroke="#a5a5a0"/><ellipse cx="352" cy="184" rx="8" ry="4" fill="#2d2e29"/><ellipse cx="372" cy="211" rx="8" ry="4" fill="#2d2e29"/><path d="m184 228 38-19 39 20-38 19-39-20Z" fill="#4b4b46"/><path d="M184 228v12l39 20 38-20v-11m-38 19v12" stroke="#a4a49c"/><path d="M223 213v-75l55-52 67 42" stroke="#9b9c94" stroke-width="23" stroke-linejoin="round"/><path d="M223 213v-75l55-52 67 42" stroke="#d7d8d0" stroke-width="16" stroke-linejoin="round"/><circle cx="223" cy="139" r="15" fill="#f8f8f4" stroke="#8d8e86" stroke-width="3"/><circle cx="278" cy="86" r="15" fill="#f8f8f4" stroke="#8d8e86" stroke-width="3"/><circle cx="278" cy="86" r="5" fill="#8d8e86"/><path d="m345 125 16 18-8 16m8-16 18 5" stroke="#66685e" stroke-width="6" stroke-linecap="round"/><path d="M144 104v-25h25m241 47h25v25m-293 14v25h25" stroke="#b9bab0"/><path d="M278 39v-8m-28 30-7-4m64 4 7-4" stroke="#b9bab0"/><path d="m141 225 110-54M362 92l65 34" stroke="#c8c9bf" stroke-dasharray="3 6"/></svg>
+            <span class="art-footer">系统示意 / 从感知到行动</span>
+          </div>
+          <div class="compact-heading"><div><p class="work-type">视觉通信 / 系统集成</p><h3 id="arm-title">智能三子棋机械臂</h3></div><span class="work-monogram" aria-hidden="true">M.</span></div>
+          <p class="project-description">连接棋盘识别、坐标传输与机械臂落子，拆分模块任务，完成从视觉感知到动作执行的联动验证。</p>
+          <details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p><strong>角色：</strong>项目组长，负责系统规划、任务拆分与模块联调，参与舵机驱动开发。</p><p><strong>技术：</strong>STM32F103、视觉通信、PWM 舵机驱动。</p><p><strong>成果：</strong>完成视觉模块与下位机通信，以及机械臂抓取和落子动作的集成验证。</p></div></details>
         </article>
       </div>
-      <div class="project-note"><span class="note-icon" aria-hidden="true">↗</span><p>新的软件作品，会继续在这里生长。</p><a class="text-link" href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer">在 GitHub 关注我 <span aria-hidden="true">↗</span></a></div>
+      <div class="work-postscript"><p>更多软件作品，正在路上。</p><a href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer">查看 GitHub 上的实践 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
     </section>
 
-    <section class="about-section" id="about" aria-labelledby="about-title"><div class="container about-grid">
-      <div class="about-copy"><p class="eyebrow">02 — A LITTLE ABOUT ME</p><h2 id="about-title">技术是起点，<br>好问题带我向前。</h2><p>我在湖南农业大学学习智能科学与技术。过去的项目让我熟悉了从功能拆解、代码实现到团队联调的过程，也让我逐渐对产品产生兴趣。</p><p>接下来，我想把更多时间放在 Linux、软件开发与开源实践上：理解系统怎样工作，也练习把复杂问题解释清楚、把工具做得更好用。</p><div class="personal-note"><span aria-hidden="true">♪</span><p>屏幕之外，我也弹贝斯、听摇滚，<br>喜欢摄影、历史和旅行。</p></div></div>
-      <div class="about-right"><div class="skill-sheet"><div class="sheet-heading"><span class="mono">MY TOOLKIT</span><span aria-hidden="true">↙</span></div><dl><div><dt>编程与开发</dt><dd>C / Java / Spring Boot / MySQL</dd></div><div><dt>已有实践</dt><dd>嵌入式开发 / 机器人 / 系统联调</dd></div><div><dt>产品与协作</dt><dd>需求梳理 / MVP / 任务拆分与推进</dd></div><div><dt>正在探索</dt><dd>Linux / 系统编程 / 开源协作</dd></div></dl></div><div class="timeline"><div class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><p class="mono timeline-date">2024 — NOW</p><h3>湖南农业大学</h3><p>湘江卓越工程师学院 · 智能科学与技术</p></div><div class="timeline-item"><span class="timeline-dot" aria-hidden="true"></span><p class="mono timeline-date">2026</p><h3>把实践带到更大的场景</h3><p>参与工业互联网平台维护实习、机器人竞赛与项目协作。</p></div><div class="timeline-item"><span class="timeline-dot current" aria-hidden="true"></span><p class="mono timeline-date">NEXT CHAPTER</p><h3>在 Linux 与产品之间，继续探索</h3><p>用软件作品记录学习，用实际反馈改进想法。</p></div></div></div>
+    <section class="about-section" id="about" aria-labelledby="about-title"><div class="page-width about-layout">
+      <div class="about-heading"><h2 id="about-title" lang="en">A little<br> about me.</h2><span>关于我</span><div class="personal-signature" aria-hidden="true">Jianyu Li</div></div>
+      <div class="about-content"><p class="about-lead">从理解一个系统，<br>到思考它为什么值得被做出来。</p><p>我在湖南农业大学湘江卓越工程师学院学习智能科学与技术。机器人、嵌入式与项目协作的经历，让我熟悉从功能拆解、代码实现到团队联调的过程，也逐渐对产品产生兴趣。</p><p>接下来，我想把更多时间放在 Linux、软件开发与开源实践上，练习发现问题、定义需求，再把想法做成可以使用的作品。</p><dl class="about-facts"><div><dt>编程与开发</dt><dd>C、Java、Spring Boot、MySQL</dd></div><div><dt>已有实践</dt><dd>嵌入式、机器人、需求梳理与 MVP</dd></div><div><dt>正在探索</dt><dd>Linux、系统编程、开源协作</dd></div></dl><p class="outside-work">工作台之外，我弹贝斯、听摇滚，也喜欢摄影、历史和旅行。</p></div>
     </div></section>
 
-    <section class="contact-section container" id="contact" aria-labelledby="contact-title"><div><p class="eyebrow">03 — LET'S CONNECT</p><h2 id="contact-title">下一个好想法，<br>也许从一次交流开始<span class="heading-dot">.</span></h2><p>欢迎交流 Linux、产品想法、机器人，或一首好听的歌。</p></div><a class="contact-link" href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer"><span class="mono">FIND ME ON GITHUB</span><span class="contact-handle">@ALARA-LI <span aria-hidden="true">↗</span></span></a></section>
+    <section class="experience-section page-width" aria-labelledby="experience-title"><div class="experience-heading"><h2 id="experience-title">沿途的经历</h2><p>学习，也在真实场景中实践。</p></div><div class="experience-list"><article class="experience-row"><p class="experience-date">2024 — 至今</p><div><h3>湖南农业大学</h3><p>智能科学与技术 · 本科在读</p></div><span class="experience-category">教育</span></article><article class="experience-row"><p class="experience-date">2026.08</p><div><h3>中电工业互联网有限公司</h3><p>参与 Java 后端平台数据库维护、业务数据核查与异常问题跟进。</p></div><span class="experience-category">实习</span></article><article class="experience-row"><p class="experience-date">项目实践</p><div><h3>研发协作与团队组织</h3><p>参与机器人竞赛与项目推进，担任学院机器人协会理事长。</p></div><span class="experience-category">协作</span></article></div></section>
+    <section class="contact-section page-width" id="contact" aria-labelledby="contact-title"><div class="contact-intro"><p>交流技术、产品，或者一首好听的歌。</p><h2 id="contact-title" lang="en">Let's connect.</h2></div><a class="contact-action" href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer" aria-label="在 GitHub 联系 ALARA-LI"><span>@ALARA-LI</span><svg viewBox="0 0 70 70" fill="none" aria-hidden="true"><path d="M12 58 58 12M12 12h46v46" stroke="currentColor" stroke-width="2"/></svg></a></section>
   </main>
-
-  <footer class="site-footer"><div class="container footer-inner"><a class="wordmark" href="#" aria-label="返回顶部">alara<span class="wordmark-dot">.</span></a><p>© 2026 黎健毓 <span aria-hidden="true">·</span> 保持好奇，持续创造。</p><a href="https://github.com/ALARA-LI/alara-li.github.io" target="_blank" rel="noopener noreferrer">网站源码 <span aria-hidden="true">↗</span></a></div></footer>
+  <footer class="site-footer page-width"><a class="footer-name" href="#main">黎健毓 / ALARA</a><p>© 2026 · 保持好奇，持续创造。</p><a href="https://github.com/ALARA-LI/alara-li.github.io" target="_blank" rel="noopener noreferrer">网站源码</a></footer>
 </body>
 </html>
