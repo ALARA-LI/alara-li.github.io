@@ -13,7 +13,7 @@
   <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="preload" href="./assets/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./assets/noto-serif-sc.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./styles.css?v=editorial-2">
+  <link rel="stylesheet" href="./styles.css?v=project-archive-3">
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到正文</a>
@@ -36,7 +36,7 @@
     <section class="work-section page-width" id="projects" aria-labelledby="work-title">
       <div class="section-header"><h2 id="work-title" lang="en">Selected work<span class="serif-period">.</span></h2><p>动手做过的事</p></div>
       <article class="featured-work" aria-labelledby="growing-title">
-        <figure class="featured-image"><img src="./assets/smart-growing-concept.webp" alt="智能植物生长装置的概念效果图：中央生长灯与环绕摆放的模块化花盆" width="1536" height="1152" fetchpriority="high" decoding="async"><figcaption><span>智能植物养护</span><span>概念设计图 · AI 辅助生成</span></figcaption></figure>
+        <figure class="featured-image"><div class="concept-image-window"><img src="./assets/smart-growing-concept.webp" alt="智能植物生长装置的概念效果图：中央生长灯与环绕摆放的模块化花盆" width="1536" height="1152" fetchpriority="high" decoding="async"></div><figcaption><span>智能植物养护</span><span>概念效果图</span></figcaption></figure>
         <div class="featured-description"><p class="work-type">产品实践 / 智能硬件</p><h3 id="growing-title">智能多肉<br>生长装置</h3><p class="project-deck">把桌面植物养护，<br>变成一次完整的产品实践。</p><p class="project-description">从环境监测与自动浇水的需求出发，划定首代 MVP 范围，推进硬件选型、传感器采集、水泵控制与整机联调。</p><dl class="project-facts"><div><dt>我的角色</dt><dd>项目负责人</dd></div><div><dt>参与环节</dt><dd>需求分析、开发、集成验证</dd></div><div><dt>已有成果</dt><dd>首代 MVP 样机与调控闭环</dd></div></dl><details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p>围绕使用场景梳理核心功能，兼顾技术可行性，明确首代开发范围。</p><p>样机已集成温湿度、光照监测及水泵控制，并完成系统集成、功能调试与整机验证。</p><p>上方图片用于呈现产品概念，不代表已交付样机的实物外观。</p></div></details></div>
       </article>
 
@@ -49,7 +49,11 @@
           </div>
           <div class="compact-heading"><div><p class="work-type">机器人 / 电控开发</p><h3 id="robot-title">RoboMaster 步兵机器人</h3></div><span class="work-monogram" aria-hidden="true">R.</span></div>
           <p class="project-description">围绕底盘运动、云台随动与视觉通信，梳理模块接口，推进电控、机械及视觉的联调与实车验证。</p>
-          <details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p><strong>角色：</strong>电控负责人，负责模块需求梳理、控制开发与联调推进。</p><p><strong>技术：</strong>STM32F427、CAN 总线、串级 PID。</p><p><strong>成果：</strong>完成底盘运动、云台随动及视觉上位机通信联调，支持自动瞄准与视觉击打。</p></div></details>
+          <details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p><strong>角色：</strong>电控负责人，负责模块需求梳理、控制开发与联调推进。</p><p><strong>技术：</strong>STM32F427、CAN 总线、串级 PID。</p><div class="code-evidence"><h4>固件工程结构</h4><p>本地归档包含基于 StandardRobot++ 的分层电控工程，按生成代码、驱动、通用组件、服务与应用组织。</p><pre aria-label="本地机器人固件目录结构"><code>cubemx/                   芯片与外设初始化
+L0_Hardware_Abstraction/  板级驱动
+L1_Middleware/           控制器与通用组件
+L2_Service/              通信、IMU、电机服务
+L3_Application/          底盘、云台、机械臂</code></pre><p>工程中保留 CubeMX 配置、Keil 工程与 ARM GCC Makefile，并附有分层架构说明。</p></div><p><strong>成果：</strong>完成底盘运动、云台随动及视觉上位机通信联调，支持自动瞄准与视觉击打。</p></div></details>
         </article>
         <article class="compact-work" aria-labelledby="arm-title">
           <div class="arm-art project-art" role="img" aria-label="三子棋机械臂系统示意，表现棋盘、视觉坐标和机械臂动作">
@@ -62,6 +66,15 @@
           <details class="work-details"><summary>阅读项目记录 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 3v14M3 10h14" stroke="currentColor" stroke-width="1.2"/></svg></summary><div class="detail-copy"><p><strong>角色：</strong>项目组长，负责系统规划、任务拆分与模块联调，参与舵机驱动开发。</p><p><strong>技术：</strong>STM32F103、视觉通信、PWM 舵机驱动。</p><p><strong>成果：</strong>完成视觉模块与下位机通信，以及机械臂抓取和落子动作的集成验证。</p></div></details>
         </article>
       </div>
+      <section class="project-archive" aria-labelledby="archive-title">
+        <div class="archive-heading"><div><h3 id="archive-title">项目档案</h3><p>样机、电路与现场，记录每一步实践。</p></div><span>来自项目工程与团队汇报资料</span></div>
+        <div class="archive-grid">
+          <figure class="archive-item"><a class="archive-image" href="./assets/prototype-real.webp" target="_blank" rel="noopener noreferrer" aria-label="查看第一代样机实拍大图"><img src="./assets/prototype-real.webp" alt="桌面植物养护装置的第一代样机，带有灯架、控制显示屏与种植槽" width="800" height="600" loading="lazy" decoding="async"></a><figcaption><strong>第一代样机</strong><span>团队汇报中的实物记录，展示灯架、显示与种植结构。</span></figcaption></figure>
+          <figure class="archive-item"><a class="archive-image archive-board" href="./assets/stm32-board-real.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 STM32 控制板实拍大图"><img src="./assets/stm32-board-real.webp" alt="手持 STM32 核心板与绿色接口扩展板的实物照片" width="1350" height="1800" loading="lazy" decoding="async"></a><figcaption><strong>STM32 控制板实拍</strong><span>主控、供电与外设接口的实物记录。</span></figcaption></figure>
+          <figure class="archive-item"><a class="archive-image archive-schematic" href="./assets/power-controller-schematic.webp" target="_blank" rel="noopener noreferrer" aria-label="查看功率控制器完整原理图"><img src="./assets/power-controller-schematic.webp" alt="机器人超级电容功率控制器原理图，包含主控、CAN、采样与功率级" width="1602" height="1119" loading="lazy" decoding="async"></a><figcaption><strong>超级电容系统电路资料</strong><span>功率控制器原理图；点击图片查看细节。</span><a class="archive-secondary-link" href="./assets/capacitor-bank-schematic.webp" target="_blank" rel="noopener noreferrer">查看电容组与均衡板原理图</a></figcaption></figure>
+          <figure class="archive-item"><a class="archive-image archive-event" href="./assets/roadshow-real.webp" target="_blank" rel="noopener noreferrer" aria-label="查看金种子项目活动现场照片"><img src="./assets/roadshow-real.webp" alt="金种子创新创业活动现场，参会人员在会场聆听" width="1600" height="1066" loading="lazy" decoding="async"></a><figcaption><strong>金种子项目活动现场</strong><span>整理自智能多肉生长装置路演资料。</span></figcaption></figure>
+        </div>
+      </section>
       <div class="work-postscript"><p>更多软件作品，正在路上。</p><a href="https://github.com/ALARA-LI" target="_blank" rel="noopener noreferrer">查看 GitHub 上的实践 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 15 15 5M5 5h10v10" stroke="currentColor" stroke-width="1.2"/></svg></a></div>
     </section>
 

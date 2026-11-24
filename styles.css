@@ -80,6 +80,8 @@ h1 { font: 400 clamp(105px, 11vw, 155px)/.88 var(--serif); letter-spacing: -.035
 .featured-work { display: grid; grid-template-columns: 1.6fr 1fr; gap: 62px; align-items: center; }
 .featured-image { min-width: 0; }
 .featured-image img { aspect-ratio: 1536 / 1152; object-fit: contain; background: #d4d5d1; }
+.concept-image-window { aspect-ratio: 1536 / 1060; overflow: hidden; background: #d4d5d1; }
+.featured-image .concept-image-window img { width: 100%; height: auto; aspect-ratio: auto; }
 .featured-image figcaption { display: flex; justify-content: space-between; gap: 15px; font-size: 10px; padding-top: 12px; color: var(--faint); }
 .work-type { font-size: 11px; color: var(--muted); margin-bottom: 16px; }
 .featured-description h3 { font: 400 39px/1.42 var(--song); letter-spacing: .03em; }
@@ -115,6 +117,26 @@ h1 { font: 400 clamp(105px, 11vw, 155px)/.88 var(--serif); letter-spacing: -.035
 .work-postscript a { display: inline-flex; align-items: center; gap: 13px; color: var(--ink); }
 .work-postscript a:hover { text-decoration: underline; text-underline-offset: 5px; }
 .work-postscript svg { width: 15px; height: 15px; }
+
+/* Real project records complement the selected work. */
+.project-archive { margin-top: 70px; padding-top: 34px; border-top: 1px solid var(--line); }
+.archive-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 26px; margin-bottom: 27px; }
+.archive-heading h3 { font: 500 28px/1.6 var(--body); }
+.archive-heading p { margin-top: 8px; font-size: 16px; color: var(--muted); }
+.archive-heading>span { font-size: 12px; color: var(--muted); padding-bottom: 4px; }
+.archive-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 35px 42px; }
+.archive-image { display: block; aspect-ratio: 4 / 3; background: #eeeee9; overflow: hidden; }
+.archive-image img { width: 100%; height: 100%; object-fit: contain; }
+.archive-board img { object-fit: cover; object-position: center 75%; }
+.archive-schematic { background: white; border: 1px solid var(--line); padding: 8px; }
+.archive-item figcaption { padding-top: 14px; }
+.archive-item figcaption strong { font-size: 16px; font-weight: 500; display: block; }
+.archive-item figcaption>span { font-size: 14px; color: var(--muted); display: block; margin-top: 5px; line-height: 1.85; }
+.archive-secondary-link { display: inline-block; font-size: 14px; margin-top: 10px; text-decoration: underline; text-underline-offset: 4px; }
+.code-evidence { margin-block: 22px; padding-block: 18px; border-block: 1px solid var(--line); }
+.code-evidence h4 { font-size: 14px; font-weight: 500; color: var(--ink); margin: 0 0 10px; }
+.code-evidence p { font-size: 14px; }
+.code-evidence pre { font: 12px/1.9 "Cascadia Code", Consolas, monospace; white-space: pre; overflow-x: auto; background: var(--panel); padding: 15px; margin-block: 14px; color: var(--ink); }
 
 /* A quieter reading rhythm for personal context. */
 .about-section { background: var(--panel); padding-block: 83px; }
@@ -175,6 +197,12 @@ h1 { font: 400 clamp(105px, 11vw, 155px)/.88 var(--serif); letter-spacing: -.035
   .experience-row { grid-template-columns: 90px 1fr 25px; gap: 14px; }
 }
 @media (max-width: 760px) {
+  .project-archive { margin-top: 45px; padding-top: 25px; }
+  .archive-heading { display: block; }
+  .archive-heading h3 { font-size: 25px; }
+  .archive-heading>span { display: block; margin-top: 13px; }
+  .archive-grid { gap: 28px 24px; }
+  .archive-item figcaption>span { font-size: 14px; }
   .page-width { width: calc(100% - 44px); }
   .site-header { min-height: 82px; }
   .identity { gap: 9px; }
@@ -250,6 +278,7 @@ h1 { font: 400 clamp(105px, 11vw, 155px)/.88 var(--serif); letter-spacing: -.035
   .footer-name { font-size: 10px; }
 }
 @media (max-width: 480px) {
+  .archive-grid { grid-template-columns: 1fr; gap: 30px; }
   .page-width { width: calc(100% - 40px); }
   .site-header { min-height: 76px; }
   .identity-name { font-size: 19px; }
