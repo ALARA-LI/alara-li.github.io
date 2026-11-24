@@ -119,6 +119,22 @@ h1 { font: 400 clamp(105px, 11vw, 155px)/.88 var(--serif); letter-spacing: -.035
 .work-postscript svg { width: 15px; height: 15px; }
 
 /* Real project records complement the selected work. */
+.personal-hardware { display: grid; grid-template-columns: 1fr 1fr; gap: 46px; align-items: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--line); }
+.hardware-render { display: block; background: #000; }
+.hardware-render img { width: 100%; height: auto; display: block; }
+.hardware-description h3 { font: 500 28px/1.5 var(--body); letter-spacing: -.02em; }
+.hardware-description>.project-description { font-size: 16px; margin-top: 18px; }
+.hardware-facts { margin-top: 24px; font-size: 16px; }
+.hardware-facts>div { display: grid; grid-template-columns: 88px 1fr; gap: 16px; padding-block: 11px; border-bottom: 1px solid var(--line); }
+.hardware-facts dt, .hardware-image-note { color: var(--muted); }
+.hardware-image-note { font-size: 14px; line-height: 1.85; margin-top: 20px; }
+.archive-image.archive-event { aspect-ratio: 3 / 2; background: transparent; }
+.archive-award { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 42px; align-items: center; }
+@media (max-width: 760px) {
+  .personal-hardware { grid-template-columns: 1fr; gap: 24px; margin-top: 42px; padding-top: 28px; }
+  .hardware-description h3 { font-size: 25px; }
+  .archive-award { display: block; }
+}
 .project-archive { margin-top: 70px; padding-top: 34px; border-top: 1px solid var(--line); }
 .archive-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 26px; margin-bottom: 27px; }
 .archive-heading h3 { font: 500 28px/1.6 var(--body); }
